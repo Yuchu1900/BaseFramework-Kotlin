@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+    </data>
+
+    <com.kennyc.view.MultiStateView
+        android:id="@+id/multiStateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:msv_emptyView="@layout/base_view_recyclerview_empty"
+        app:msv_errorView="@layout/base_view_recycerview_error"
+        app:msv_loadingView="@layout/base_view_recyclerview_loading"
+        app:msv_viewState="loading">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.cmh.base.list.view.LoadRecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/divider_line"
+                android:dividerHeight="1dp"
+                android:scrollbars="vertical" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </com.kennyc.view.MultiStateView>
+</layout>

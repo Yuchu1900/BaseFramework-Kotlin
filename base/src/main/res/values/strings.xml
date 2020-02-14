@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Base</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_error">加载错误</string>
+</resources>

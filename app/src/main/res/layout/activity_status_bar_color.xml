@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#7f00ff00"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerInside" />
+        <Button
+            android:id="@+id/btnDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="白底黑字状态栏" />
+        <Button
+            android:id="@+id/btnLight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="黑底白字状态栏" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

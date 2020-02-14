@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmh.baseframedemo.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btnDarkStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity状态栏配色" />
+        <Button
+            android:id="@+id/btnImmersiveStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity沉浸式状态栏配色" />
+        <Button
+            android:id="@+id/btnRxBusEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity中的RxBus消息" />
+        <Button
+            android:id="@+id/btnPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity用户权限" />
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment处理回退键事件" />
+        <Button
+            android:id="@+id/btnExtras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment中接收activity的参数" />
+        <Button
+            android:id="@+id/btnFragmentRxEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment中的RxEvent" />
+        <Button
+            android:id="@+id/btnFragmentPermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment中的用户权限" />
+        <Button
+            android:id="@+id/btnFragmentStandardList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment标准的列表" />
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
