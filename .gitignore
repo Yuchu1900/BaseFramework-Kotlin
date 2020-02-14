@@ -1,0 +1,11 @@
+.gradle
+*.class
+*.iml
+/app/app.iml
+/base/base.iml
+Target
+.idea
+/freeline
+/freelin_core
+/app/*.apk
+/freeline*
