@@ -41,7 +41,8 @@ dependencies {
     //kotlin注解DataBinding, 否则BR这种资源无法自动生成
     kapt'com.android.databinding:compiler:3.1.4'
 
-    implementation project(':base') //在app模块中导入base模块
+//    implementation project(':base') //在app模块中导入base模块
+    implementation 'com.cmh:base_framework_lib:1.0.0' ////导入base模块git打包版本，跟上面这句导入本地base模块效果是一样的
 }
 repositories {
     mavenCentral()

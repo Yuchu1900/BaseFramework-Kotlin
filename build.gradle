@@ -6,6 +6,7 @@ buildscript {
     repositories {
         google()
         jcenter()
+        mavenCentral() //导入base模块git打包版本
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.3'
@@ -22,6 +23,7 @@ allprojects {
         google() //google的maven仓库
         jcenter()
         maven { url 'https://jitpack.io' }
+        maven { url "https://raw.githubusercontent.com/Yuchu1900/BaseFramework-Kotlin/master" }//导入base模块git打包版本
     }
 }
 

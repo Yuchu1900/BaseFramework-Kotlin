@@ -81,6 +81,21 @@ repositories {
     mavenCentral()
 }
 
+//怎么将自己的库提供给别人用呢(像引入第三方库那样，只要在build.gradle文件里implementation 'xxx')
+//1.要打包的模块的build.gradle文件里，写入下面的"打包发布配置"
+//2.然后在Android Studio的终端Terminal里输入：./gradlew uploadArchives 来创建模块对应的.jar和.aar文件
+//  这些文件存放的位置由下面配置里的参数"GITHUB_REPO_PATH"指定
+//3.创建了这些文件后，要同步到对应的git仓库
+//这样就可以像导入第三方库一样，导入我们直接的库，具体要怎么导入呢？
+//1.在工程目录的build.gradle文件里配置maven地址
+//  (1)buildscript的repositories下加入mavenCentral()
+//  (2)allprojects的repositories下加入maven { url "https://raw.githubusercontent.com/Yuchu1900/BaseFramework-Kotlin/master" }
+//     url的格式是：https://raw.githubusercontent.com/GitHub用户名/仓库项目名/master
+//     除了"GitHub用户名"和"仓库项目名"改为对应的值，其他内容不变
+//2.在要使用的模块里(比如本工程的app模块要使用这些功能)，就在该模块的build.gradle文件里配置implementation 'xxx'
+//  例如：implementation 'com.cmh:base_framework_lib:1.0.0'
+//  具体格式：implementation 'PUBLISH_GROUP_ID:PUBLISH_ARTIFACT_ID:PUBLISH_VERSION'
+
 //////// 打包发布配置开始 ////////
 apply plugin: 'maven'
 ext {
