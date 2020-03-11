@@ -1,9 +1,6 @@
 .gradle
 *.class
-*.iml
-/BaseFrame.iml
-/app/app.iml
-/base/base.iml
+**/*.iml
 Target
 .idea
 /freeline
