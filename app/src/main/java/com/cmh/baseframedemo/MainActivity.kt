@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this@MainActivity, StatusBarColorActivity::class.java)
             startActivity(intent)
         }
+        
         findViewById<View>(R.id.btnImmersiveStatusBar).setOnClickListener {
             val intent = Intent(this@MainActivity, StatusBarImmersiveActivity::class.java)
             startActivity(intent)
